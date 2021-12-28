@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iFAAI",
+    "sources": [
+        "main.scss",
+        "components/_variables.scss",
+        "components/layout/_header.scss",
+        "components/layout/_home.scss",
+        "components/layout/_info.scss",
+        "components/layout/_services.scss",
+        "components/layout/_skills.scss",
+        "components/layout/_contact.scss",
+        "components/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
