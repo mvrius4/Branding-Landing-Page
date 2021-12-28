@@ -2,11 +2,13 @@
 
 header {
     width: 100%;
+    top: 0;
     background: $white;
+    position: sticky;
     padding: 1rem;
-    @include flexbox(none, space-between, column);
+    @include flexbox(none, space-between, column, 0);
     .main-header {
-        @include flexbox(center, space-between, row)
+        @include flexbox(center, space-between, row, 0);
         .logo {
             font-size: 2rem;
             font-weight: 700;
@@ -20,12 +22,9 @@ header {
     nav {
         display: none;
         ul {
-            @include flexbox(center, 0, column);
-            padding: 1rem;
+            @include flexbox(center, 0, column, 1rem);
             li {
                 padding: 1rem;
-                a {
-                }
             }
         }
     }

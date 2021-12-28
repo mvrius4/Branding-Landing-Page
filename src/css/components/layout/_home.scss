@@ -1,0 +1,21 @@
+@import "../variables";
+
+main {
+    background: $blue;
+    .container {
+        @include flexbox(0, 0, column, 0);
+        .content-container {
+            background: $white;
+            @include flexbox(left, 0, column, 2rem);
+            padding: 2.5rem;
+            .home-btn {
+                background: $blue;
+                color: $white;
+                &:hover, &:active {
+                    background: $red;
+                }
+            }
+        } 
+    }
+    
+}

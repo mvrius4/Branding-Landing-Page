@@ -1,15 +1,16 @@
 $font: "Manrope", sans-serif;
 $size: 800px;
 $white: rgb(245, 245, 245);
-$black: rgb(40, 40, 40);
-$blue: rgb(0, 132, 255);
-$pink: rgb(255, 122, 144);
+$black: rgb(55, 55, 55);
+$blue: rgb(58, 82, 214);
+$red: rgb(255, 98, 98);
 
-@mixin flexbox($align, $option, $direction) {
+@mixin flexbox($align, $option, $direction, $gap) {
     display: flex;
     align-items: $align;
     justify-content: $option;
     flex-direction: $direction;
+    gap: $gap;
 }
 @mixin reset {
     a {
@@ -22,5 +23,9 @@ $pink: rgb(255, 122, 144);
     }
     li {
         list-style: none;
+    }
+    button {
+        border: 0;
+        outline: none;
     }
 }

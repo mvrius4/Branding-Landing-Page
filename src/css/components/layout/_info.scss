@@ -1,0 +1,14 @@
+@import "../variables";
+
+.informations {
+    background: $blue;
+    color: $white;
+    text-align: center;
+    @include flexbox(center, 0, column, 2rem);
+    p { line-height: 1.85; }
+    h2 { font-size: 1.75rem; }
+    .info-btn {
+        color: $blue;
+        &:hover, &:active { color: $red; }
+    }
+}
