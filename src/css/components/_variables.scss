@@ -1,0 +1,26 @@
+$font: "Manrope", sans-serif;
+$size: 800px;
+$white: rgb(245, 245, 245);
+$black: rgb(40, 40, 40);
+$blue: rgb(0, 132, 255);
+$pink: rgb(255, 122, 144);
+
+@mixin flexbox($align, $option, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $option;
+    flex-direction: $direction;
+}
+@mixin reset {
+    a {
+        color: $black;
+        text-decoration: none;
+        &:hover, &:after {
+            color: $blue;
+            transition: 350ms ease-in-out;
+        }
+    }
+    li {
+        list-style: none;
+    }
+}

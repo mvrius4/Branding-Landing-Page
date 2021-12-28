@@ -1,0 +1,32 @@
+@import "../variables";
+
+header {
+    width: 100%;
+    background: $white;
+    padding: 1rem;
+    @include flexbox(none, space-between, column);
+    .main-header {
+        @include flexbox(center, space-between, row)
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        svg:hover {
+            fill: $blue;
+            cursor: pointer;
+        }
+    }
+    
+    nav {
+        display: none;
+        ul {
+            @include flexbox(center, 0, column);
+            padding: 1rem;
+            li {
+                padding: 1rem;
+                a {
+                }
+            }
+        }
+    }
+}

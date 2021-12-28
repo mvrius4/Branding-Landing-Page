@@ -8,3 +8,18 @@
 @import "./components/layout/contact";
 @import "./components/layout/footer";
 
+@include reset;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: $font;
+    font-size: 1rem;
+    color: $black;
+    line-height: 1.25;
+}
