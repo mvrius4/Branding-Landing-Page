@@ -6,6 +6,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   padding: 1rem;
+  z-index: 999999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +43,10 @@ header .main-header {
 header .main-header .logo {
   font-size: 2rem;
   font-weight: 700;
+}
+
+header .main-header svg {
+  position: unset;
 }
 
 header .main-header svg:hover {
@@ -156,11 +161,11 @@ main .container .content-container-left .home-btn:hover, main .container .conten
 
 .services .image-container {
   background: whitesmoke;
-  position: relative;
   width: 80%;
   height: 100%;
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,14 +183,16 @@ main .container .content-container-left .home-btn:hover, main .container .conten
 }
 
 .services .image-container img {
+  background: whitesmoke;
   padding: 5rem 0;
 }
 
 .services .image-container svg {
-  position: absolute;
-  top: -3rem;
-  left: -3rem;
-  z-index: -1;
+  width: 10rem;
+}
+
+.services .image-container svg path {
+  fill: #ff6262;
 }
 
 .services .content-container-left {
@@ -278,5 +285,13 @@ body .content-container-left {
           flex-direction: column;
   gap: 2rem;
   padding: 2.5rem;
+}
+
+body svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */

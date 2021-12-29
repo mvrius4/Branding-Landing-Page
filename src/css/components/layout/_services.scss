@@ -3,21 +3,21 @@
 .services {
     background: $white;
     @include flexbox(center, 0, column, 0);
+    
     .image-container {
         background: $white;
-        position: relative;
         width: 80%;
         height: 100%;
         transform: translateY(10%);
+        position: relative;
         @include flexbox(center, 0, 0, 0);
         img {
+            background: $white;
             padding: 5rem 0;
         }
         svg {
-            position: absolute;
-            top: -3rem;
-            left: -3rem;
-            z-index: -1;
+            width: 10rem;
+            path { fill: $red; }
         }
     }
     .content-container-left {

@@ -6,6 +6,7 @@ header {
     background: $white;
     position: sticky;
     padding: 1rem;
+    z-index: 999999;
     @include flexbox(none, space-between, column, 0);
     .main-header {
         @include flexbox(center, space-between, row, 0);
@@ -13,9 +14,12 @@ header {
             font-size: 2rem;
             font-weight: 700;
         }
-        svg:hover {
-            fill: $blue;
-            cursor: pointer;
+        svg {
+            position: unset;
+            &:hover {
+                fill: $blue;
+                cursor: pointer;  
+            }
         }
     }
     
