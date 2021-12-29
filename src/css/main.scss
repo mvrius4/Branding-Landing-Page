@@ -29,8 +29,10 @@ body {
     h1 {
         color: $blue;
     }
+    h2 { font-size: 1.75rem; }
     p {
         font-weight: 500;
+        line-height: 1.85;
     }
     img {
         width: 100%;
@@ -40,5 +42,10 @@ body {
         cursor: pointer;
         padding: 1rem 1.75rem;
         border-radius: 5rem;
+    }
+    .content-container-left {
+        width: 100%;
+        @include flexbox(left, 0, column, 2rem);
+        padding: 2.5rem;
     }
 }

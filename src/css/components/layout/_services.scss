@@ -1,0 +1,28 @@
+@import "../variables";
+
+.services {
+    background: $white;
+    @include flexbox(center, 0, column, 0);
+    .image-container {
+        background: $white;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        transform: translateY(10%);
+        @include flexbox(center, 0, 0, 0);
+        img {
+            padding: 5rem 0;
+        }
+        svg {
+            position: absolute;
+            top: -3rem;
+            left: -3rem;
+            z-index: -1;
+        }
+    }
+    .content-container-left {
+        background: $red;
+        color: $white;
+        h2 { padding-top: 1.25rem;}
+    }
+}
