@@ -1,0 +1,38 @@
+@import "../variables";
+
+footer {
+    width: 100%;
+    background: $black;
+    color: $white;
+    text-align: center;
+    h3, a, p { line-height: 1.25; }
+    @include flexbox(center, 0, column, 0);
+    .main-content {
+        width: 100%;
+        @include flexbox(center, 0, column, 2rem);
+        padding: 2rem;
+        .content-container {
+            @include flexbox(center, 0, column, .5rem);
+        }
+        .social {
+            @include flexbox(0, 0, 0, 2rem);
+        }
+    }
+    a {
+        color: $white;
+        &:hover, &:active {
+            color: $blue;
+        }
+    }
+    svg {
+        width: 60px;
+        height: 60px;
+        fill: $white;
+        &:hover {
+            fill: $blue;
+            cursor: pointer;
+            transition: 300ms ease-in-out;
+        }
+    }
+    .credits { padding: .5rem; }
+}
