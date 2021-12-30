@@ -279,6 +279,74 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   fill: #ff6262;
 }
 
+.team {
+  background: #3a52d6;
+  color: whitesmoke;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.team .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.team .content-container .team-container {
+  background: whitesmoke;
+  color: #141414;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.team .content-container .team-container img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.team .content-container .team-container span {
+  color: #3a52d6;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
 a {
   color: #141414;
   text-decoration: none;
@@ -320,11 +388,16 @@ body main, body section {
 }
 
 body h1 {
+  font-size: 2.25rem;
   color: #3a52d6;
 }
 
 body h2 {
-  font-size: 1.75rem;
+  font-size: 1.8rem;
+}
+
+body h3 {
+  font-size: 1.5rem;
 }
 
 body p {
@@ -359,6 +432,6 @@ body .content-container-left {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

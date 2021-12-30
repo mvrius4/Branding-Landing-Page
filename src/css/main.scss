@@ -5,6 +5,7 @@
 @import "./components/layout/info";
 @import "./components/layout/services";
 @import "./components/layout/skills";
+@import "./components/layout/team";
 @import "./components/layout/contact";
 @import "./components/layout/footer";
 
@@ -27,9 +28,11 @@ body {
         padding: 4rem 2rem;
     }
     h1 {
+        font-size: 2.25rem;
         color: $blue;
     }
-    h2 { font-size: 1.75rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
     p {
         font-weight: 500;
         line-height: 1.85;
@@ -46,6 +49,6 @@ body {
     .content-container-left {
         width: 100%;
         @include flexbox(left, 0, column, 2rem);
-        padding: 2.5rem;
+        padding: 2rem;
     }
 }
