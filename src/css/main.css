@@ -45,10 +45,6 @@ header .main-header .logo {
   font-weight: 700;
 }
 
-header .main-header svg {
-  position: unset;
-}
-
 header .main-header svg:hover {
   fill: #3a52d6;
   cursor: pointer;
@@ -189,6 +185,11 @@ main .container .content-container-left .home-btn:hover, main .container .conten
 
 .services .image-container svg {
   width: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: visible;
 }
 
 .services .image-container svg path {
@@ -204,8 +205,82 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   padding-top: 1.25rem;
 }
 
+.skills {
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.skills .image-container {
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  gap: 0;
+}
+
+.skills .content-container-left .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.skills .content-container-left .skills-container .skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.skills .content-container-left .skills-container .skill-container svg path {
+  fill: #ff6262;
+}
+
 a {
-  color: #373737;
+  color: #141414;
   text-decoration: none;
 }
 
@@ -235,7 +310,7 @@ body {
   width: 100%;
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
-  color: #373737;
+  color: #141414;
   line-height: 1.25;
 }
 
@@ -285,13 +360,5 @@ body .content-container-left {
           flex-direction: column;
   gap: 2rem;
   padding: 2.5rem;
-}
-
-body svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: visible;
-  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */

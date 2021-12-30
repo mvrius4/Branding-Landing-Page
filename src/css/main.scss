@@ -48,11 +48,4 @@ body {
         @include flexbox(left, 0, column, 2rem);
         padding: 2.5rem;
     }
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        overflow: visible;
-        z-index: -1;
-    }
 }
