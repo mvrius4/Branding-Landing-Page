@@ -21,7 +21,7 @@ header {
             }
         }
     }
-    
+    .active { display: block; }
     nav {
         display: none;
         ul {
@@ -30,5 +30,11 @@ header {
                 padding: 1rem;
             }
         }
+    }
+    @media (min-width: 800px) {
+        @include flexbox(0, 0, row, 0);
+        svg { display: none; }
+        nav { display: block; }
+        nav ul { @include flexbox(0, 0, row, 0); }
     }
 }

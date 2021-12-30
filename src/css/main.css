@@ -50,6 +50,10 @@ header .main-header svg:hover {
   cursor: pointer;
 }
 
+header .active {
+  display: block;
+}
+
 header nav {
   display: none;
 }
@@ -73,6 +77,47 @@ header nav ul {
 
 header nav ul li {
   padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: 0;
+        -ms-flex-pack: 0;
+            justify-content: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
+  header svg {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: 0;
+        -ms-flex-pack: 0;
+            justify-content: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
 }
 
 main {
