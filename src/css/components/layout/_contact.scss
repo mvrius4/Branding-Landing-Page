@@ -1,0 +1,59 @@
+@import "../variables";
+
+.contact {
+    width: 100%;
+    @include flexbox(center, 0, column, 0);
+    .contact-details {
+        text-align: center;
+        transform: translateY(4%);
+        @include flexbox(center, 0, column, 2rem);
+        .detail {
+            background: $white;
+            width: 220px;
+            height: 220px;
+            @include flexbox(center, center, column, .5rem);
+            svg {
+                width: 55px;
+                height: 55px;
+                fill: $blue;
+            }
+        }
+    }
+    .contact-container {
+        width: 100%;
+        background: $blue;
+        color: $white;
+        padding: 2rem;
+        padding-top: 3.5rem;
+        @include flexbox(center, 0, column, 2.5rem);
+        form {
+            width: 100%;
+            @include flexbox(center, 0, column, 1.5rem);
+            input, textarea {
+                width: 100%;
+                padding: .35rem;
+                border: 0;
+                outline: none;
+                &:active, &:focus {
+                    border-bottom: 1px solid $red;
+                    padding: .45rem;
+                }
+            }
+            input::placeholder, textarea::placeholder {
+                font-size: .8rem;
+                font-family: $font;
+                color: $blue;
+            }
+            button {
+                width: 100%;
+                background: $red;
+                color: $white;
+                border-radius: 0;
+                &:hover, &:active {
+                    background: $white;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
