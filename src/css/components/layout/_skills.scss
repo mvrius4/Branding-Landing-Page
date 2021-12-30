@@ -1,0 +1,21 @@
+@import "../variables";
+
+.skills {
+    background: $white;
+    @include flexbox(center, 0, column, 0);
+    .image-container {
+        background: $white;
+        @include flexbox(center, 0, 0, 0);
+    }
+    .content-container-left {
+        .skills-container {
+            @include flexbox(center, 0, column, 2rem);
+            .skill-container {
+                @include flexbox(center, 0, column, 1rem);
+                svg path {
+                    fill: $red;  
+                }
+            }
+        }
+    }
+}
