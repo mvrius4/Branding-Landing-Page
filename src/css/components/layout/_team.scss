@@ -1,0 +1,23 @@
+@import "../variables";
+
+.team {
+    background: $blue;
+    color: $white;
+    text-align: center;
+    @include flexbox(center, 0, column, 2rem);
+    .content-container {
+        @include flexbox(center, center, column, 2rem);
+        .team-container {
+            background: $white;
+            color: $black;
+            padding: 2rem;
+            @include flexbox(center, center, column, 1.25rem);
+            img { border-radius: 50%; width: 20% }
+            span { 
+                color: $blue; 
+                font-weight: 700; 
+                font-size: 1.1rem; 
+            }
+        }
+    }
+}
