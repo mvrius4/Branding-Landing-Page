@@ -347,6 +347,261 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   font-size: 1.1rem;
 }
 
+.contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.contact .contact-details {
+  text-align: center;
+  -webkit-transform: translateY(4%);
+          transform: translateY(4%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.contact .contact-details .detail {
+  background: whitesmoke;
+  width: 220px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact .contact-details .detail svg {
+  width: 55px;
+  height: 55px;
+  fill: #3a52d6;
+}
+
+.contact .contact-container {
+  width: 100%;
+  background: #3a52d6;
+  color: whitesmoke;
+  padding: 2rem;
+  padding-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact .contact-container form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact .contact-container form input, .contact .contact-container form textarea {
+  width: 100%;
+  padding: .35rem;
+  border: 0;
+  outline: none;
+}
+
+.contact .contact-container form input:active, .contact .contact-container form input:focus, .contact .contact-container form textarea:active, .contact .contact-container form textarea:focus {
+  border-bottom: 1px solid #ff6262;
+  padding: .45rem;
+}
+
+.contact .contact-container form input::-webkit-input-placeholder, .contact .contact-container form textarea::-webkit-input-placeholder {
+  font-size: .8rem;
+  font-family: "Manrope", sans-serif;
+  color: #3a52d6;
+}
+
+.contact .contact-container form input:-ms-input-placeholder, .contact .contact-container form textarea:-ms-input-placeholder {
+  font-size: .8rem;
+  font-family: "Manrope", sans-serif;
+  color: #3a52d6;
+}
+
+.contact .contact-container form input::-ms-input-placeholder, .contact .contact-container form textarea::-ms-input-placeholder {
+  font-size: .8rem;
+  font-family: "Manrope", sans-serif;
+  color: #3a52d6;
+}
+
+.contact .contact-container form input::placeholder, .contact .contact-container form textarea::placeholder {
+  font-size: .8rem;
+  font-family: "Manrope", sans-serif;
+  color: #3a52d6;
+}
+
+.contact .contact-container form button {
+  width: 100%;
+  background: #ff6262;
+  color: whitesmoke;
+  border-radius: 0;
+}
+
+.contact .contact-container form button:hover, .contact .contact-container form button:active {
+  background: whitesmoke;
+  color: #3a52d6;
+}
+
+footer {
+  width: 100%;
+  background: #141414;
+  color: whitesmoke;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+footer h3, footer a, footer p {
+  line-height: 1.25;
+}
+
+footer .main-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+footer .main-content .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .main-content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  gap: 2rem;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+footer a:hover, footer a:active {
+  color: #3a52d6;
+}
+
+footer svg {
+  width: 60px;
+  height: 60px;
+  fill: whitesmoke;
+}
+
+footer svg:hover {
+  fill: #3a52d6;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+footer .credits {
+  padding: .5rem;
+}
+
 a {
   color: #141414;
   text-decoration: none;
