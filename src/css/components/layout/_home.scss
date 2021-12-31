@@ -14,6 +14,12 @@ main {
                 }
             }
         } 
+        @media (min-width:800px) {
+            @include flexbox(0, 0, row, 0);
+            img {max-width: 50%;}
+            .content-container-left {
+                @include flexbox(0, center, 0, 2rem);
+            }
+        }
     }
-    
 }

@@ -21,7 +21,10 @@ header {
             }
         }
     }
-    .active { display: block; }
+    .active { 
+        display: block; 
+        animation: fade 1s;
+    }
     nav {
         display: none;
         ul {

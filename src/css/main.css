@@ -52,6 +52,8 @@ header .main-header svg:hover {
 
 header .active {
   display: block;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
 }
 
 header nav {
@@ -154,6 +156,44 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   background: #ff6262;
 }
 
+@media (min-width: 800px) {
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: 0;
+        -ms-flex-pack: 0;
+            justify-content: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
+  main .container img {
+    max-width: 50%;
+  }
+  main .container .content-container-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: 0;
+            flex-direction: 0;
+    gap: 2rem;
+  }
+}
+
 .informations {
   background: #3a52d6;
   color: whitesmoke;
@@ -244,10 +284,30 @@ main .container .content-container-left .home-btn:hover, main .container .conten
 .services .content-container-left {
   background: #ff6262;
   color: whitesmoke;
+  padding-top: 3.5rem;
 }
 
 .services .content-container-left h2 {
   padding-top: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: 0;
+        -ms-flex-pack: 0;
+            justify-content: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 0;
+  }
 }
 
 .skills {
@@ -303,6 +363,25 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   gap: 2rem;
 }
 
+@media (min-width: 800px) {
+  .skills .content-container-left .skills-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
+}
+
 .skills .content-container-left .skills-container .skill-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,6 +401,25 @@ main .container .content-container-left .home-btn:hover, main .container .conten
 
 .skills .content-container-left .skills-container .skill-container svg path {
   fill: #ff6262;
+}
+
+@media (min-width: 800px) {
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: 0;
+        -ms-flex-align: 0;
+            align-items: 0;
+    -webkit-box-pack: 0;
+        -ms-flex-pack: 0;
+            justify-content: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
 }
 
 .team {
@@ -361,6 +459,24 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   gap: 2rem;
 }
 
+@media (min-width: 800px) {
+  .team .content-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .team .content-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .team .content-container .team-container {
   background: whitesmoke;
   color: #141414;
@@ -383,7 +499,13 @@ main .container .content-container-left .home-btn:hover, main .container .conten
 
 .team .content-container .team-container img {
   border-radius: 50%;
-  width: 20%;
+  max-width: 50%;
+}
+
+@media (min-width: 800px) {
+  .team .content-container .team-container img {
+    max-width: 70%;
+  }
 }
 
 .team .content-container .team-container span {
@@ -410,7 +532,27 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   gap: 0;
 }
 
+@media (min-width: 800px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+  }
+}
+
 .contact .contact-details {
+  background-color: whitesmoke;
   text-align: center;
   -webkit-transform: translateY(4%);
           transform: translateY(4%);
@@ -430,10 +572,21 @@ main .container .content-container-left .home-btn:hover, main .container .conten
   gap: 2rem;
 }
 
+@media (min-width: 800px) {
+  .contact .contact-details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .contact .contact-details .detail {
   background: whitesmoke;
-  width: 220px;
-  height: 220px;
+  min-width: 220px;
+  min-height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +629,12 @@ main .container .content-container-left .home-btn:hover, main .container .conten
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2.5rem;
+}
+
+@media (min-width: 800px) {
+  .contact .contact-container {
+    max-width: 50%;
+  }
 }
 
 .contact .contact-container form {
@@ -688,19 +847,20 @@ body main, body section {
 }
 
 body h1 {
-  font-size: 2.25rem;
+  font-size: clamp(2.5rem, 6vw, 10rem);
   color: #3a52d6;
 }
 
 body h2 {
-  font-size: 1.8rem;
+  font-size: clamp(1.75rem, 3vw, 5rem);
 }
 
 body h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
 }
 
 body p {
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
   font-weight: 500;
   line-height: 1.85;
 }
@@ -733,5 +893,23 @@ body .content-container-left {
           flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
