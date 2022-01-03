@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Branding Landing Page</title>
+
+    <title>mvrius - Branding Agency Landing Page</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="description" content="Hello, my name is Marius, a 17 years old self-taught Web and Graphic Designer. Here I've created a Branding Agency Website." />
+    <link rel="canonical" href="https://brandingmvrius.netlify.app"/>
+    <meta property="og:title" content="mvrius - Branding Agency Landing Page" />
+    <meta property="og:description" content="Hello, my name is Marius, a 17 years old self-taught Web and Graphic Designer. Here I've created a Branding Agency Website." />
+    <meta property="og:site_name" content="mvrius" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:url" content="https://brandingmvrius.netlify.app" />
+    <meta property="og:image" content="./src/img/favicon.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image:alt" content="mvrius - Branding Agency Landing Page" />
+    <meta name="twitter:site" content="@mvrius69" />
+    <meta name="twitter:creator" content="@mvrius69" />
+    <meta name="twitter:card" content="summary_large_image" />
+	<meta name="keywords" content="Branding Agency, mvrius, Website, Branding, Agency, Landing page, Design, Site, SEO, Services, Digital Marketing"/>
+	<meta name="author" content="mvrius"/>
+	<meta name="copyright" content="mvrius"/>
+	<meta name="robots" content="index, follow"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon.png">
     <link rel="stylesheet" href="./src/css/main.css">
     <script src="./src/js/script.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
-<body>
+<body itemscope="" itemtype="https://schema.org/WebPage">
     <header>
         <div class="main-header">
             <a href="#" class="logo">Branding</a>
@@ -29,8 +53,8 @@
         <div class="container">
             <img src="./src/img/home-image.png" alt="Main Image for Website">
             <div class="content-container-left">
-                <h1>Branding Agency</h1>
-                <p>
+                <h1 itemprop="name">Branding Agency</h1>
+                <p itemprop="description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, eligendi!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ab.
                     Lorem ipsum dolor, sit amet consectetur adipisicing.
@@ -42,7 +66,7 @@
     </main>
     <section class="informations" id="info">
         <h2>Discovering a New Reality</h2>
-        <p>
+        <p itemprop="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Perferendis adipisci eum ad accusantium provident dolor aut rerum quia quisquam optio.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, culpa?
@@ -65,7 +89,7 @@
             </p>
         </article>
     </section>
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" itemprop="breadcrumb">
         <div class="image-container">
             <img src="./src/img/skills.png" alt="Skills section image">
         </div>
@@ -93,16 +117,16 @@
             </p>
         </article>
     </section>
-    <section class="team" id="team">
+    <section class="team" id="team" itemscope itemtype="https://schema.org/Organization">
         <h2>Our Team</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Aut unde suscipit illum fugiat repudiandae! Nobis.
         </p>
         <div class="content-container">
-            <div class="team-container">
+            <div class="team-container" itemprop="member" itemscope itemtype="https://schema.org/Person">
                 <img src="./src/img/team.png" alt="First team member image">
-                <h3>Eduard Melqart</h3>
+                <h3 itemprop="name">Eduard Melqart</h3>
                 <span>creative leader</span>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -112,9 +136,9 @@
 
                 </div>
             </div>
-            <div class="team-container">
+            <div class="team-container" itemprop="member" itemscope itemtype="https://schema.org/Person">
                 <img src="./src/img/team.png" alt="First team member image">
-                <h3>Eduard Melqart</h3>
+                <h3 itemprop="name">Eduard Melqart</h3>
                 <span>creative leader</span>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -124,9 +148,9 @@
 
                 </div>
             </div>
-            <div class="team-container">
+            <div class="team-container" itemprop="member" itemscope itemtype="https://schema.org/Person">
                 <img src="./src/img/team.png" alt="First team member image">
-                <h3>Eduard Melqart</h3>
+                <h3 itemprop="name">Eduard Melqart</h3>
                 <span>creative leader</span>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -136,9 +160,9 @@
 
                 </div>
             </div>
-            <div class="team-container">
+            <div class="team-container" itemprop="member" itemscope itemtype="https://schema.org/Person">
                 <img src="./src/img/team.png" alt="First team member image">
-                <h3>Eduard Melqart</h3>
+                <h3 itemprop="name">Eduard Melqart</h3>
                 <span>creative leader</span>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
